@@ -51,5 +51,5 @@ jobs:
 
       - name: Push Docker image
         run: |
-          docker tag python-calculator:latest ${{ secrets.DOCKER_USERNAME }}/actions-demo:latest
+          docker tag actions-demo:latest ${{ secrets.DOCKER_USERNAME }}/actions-demo:latest
           docker push ${{ secrets.DOCKER_USERNAME }}/actions-demo:latest
